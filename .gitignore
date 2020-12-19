@@ -1,4 +1,11 @@
-_site/
-.sass-cache/
-.jekyll-cache/
+# Ruby files for local website preview
+.ruby-version
+Gemfile
+Gemfile.lock
+
+# Jekyll files
+_site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
+vendor
