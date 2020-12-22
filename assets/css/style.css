@@ -1,0 +1,190 @@
+---
+---
+
+/* --------------------
+ * General page characteristics
+ * -------------------- */
+
+html {
+	background-color: #eeeeee;
+}
+
+body {
+	font-size: 12pt;
+	font-family: 'Open Sans',
+	             Arial,
+               sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Montserrat,
+	             'Open Sans',
+							 Arial,
+							 sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* --------------------
+ * CV header characteristics
+ * -------------------- */
+
+#cv {
+	width: 75%;
+	max-width: 1000px;
+	margin: 10px auto;
+}
+
+#cv header {
+	margin-bottom: 30px;
+	padding: 0 5px 10px;
+	border-bottom: 2px solid #777777;
+}
+
+#cv h1 {
+	margin-bottom: 10px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+#cv .brand-logo {
+	height: 16px;
+	width: auto;
+	margin-right: 5px;
+}
+
+#cv #employer {
+	color: #444444;
+	font-weight: 600;
+	text-align: center;
+}
+
+#cv #contact {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+	font-size: 11pt;
+}
+
+#cv #contact #web {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#cv #contact #email-mask::before {
+	content: "negus";
+}
+
+#cv #contact #email-mask::after {
+	content: "@berkeley.edu";
+}
+
+#cv #media {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#cv #media .venue {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/* --------------------
+ * CV content characteristics
+ * -------------------- */
+
+#cv-content {
+	padding: 0 5px;
+}
+
+#cv .section {
+	margin: 50px 0;
+}
+
+#cv .degree,
+#cv .experience,
+#cv .opportunity,
+#cv .honor,
+#cv .activity {
+	display: flex;
+}
+
+#cv .degree,
+#cv .experience {
+	margin: 10px 0;
+}
+
+#cv .opportunity,
+#cv .honor,
+#cv .activity {
+	margin: 5px 0;
+}
+
+#cv .notes {
+	color: #777777;
+	margin-top: 5px;
+	margin-left: 25px;
+	font-size: 11pt;
+	font-style: italic;
+}
+
+#cv .duration ,
+#cv .semester ,
+#cv .date {
+	min-width: 175px;
+	margin-left: auto;
+	text-align: right;
+}
+
+#cv #education .degree-title {
+	min-width: 75px;
+}
+
+#cv #education .institution {
+	font-weight: 600;
+}
+
+#cv #research .position {
+	font-weight: 600;
+}
+
+#cv #teaching .experience {
+	display: flex;
+}
+
+#cv #teaching .description {
+	display: flex;
+	flex-direction: column;
+}
+
+#cv #teaching .course .code {
+	margin-right: 5px;
+	color: #777777;
+	font-size: 11pt;
+}
+
+#cv #teaching .course {
+	font-weight: 600;
+}
+
+#cv #communications .me {
+	font-weight: 600;
+}
+
+#cv #skill-categories {
+	display: flex;
+	justify-content: space-between;
+}
+
+#cv #skill-categories .skill-category .note {
+	color: #777777;
+	font-size: 12px;
+}

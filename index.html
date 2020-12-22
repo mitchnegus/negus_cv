@@ -5,30 +5,50 @@ layout: cv
 <header>
 
 	<h1>Mitchell Negus</h1>
-	
+
 	<div id="employer">
 		<div class="department">Department of Nuclear Engineering</div>
 		<div class="institution">University of California, Berkeley</div>
 	</div>
-	
+
 	<div id="contact">
-	
-		<div id="github">
-			<a href="https://github.com/{{ site.github_username }}">
-				{{ site.github_username }}
-			</a>
+
+		<div id="web">
+			<div id="email">
+				<span id="email-mask"></span>
+			</div>
+			<div id="website">
+				<a href="https://www.mitchnegus.com">
+					www.mitchnegus.com
+				</a>
+			</div>
 		</div>
 
-		<div id="twitter">
-			<a href="https://twitter.com/{{site.twitter_username }}">
-				@{{ site.twitter_username }}
-			</a>
+		<div id="media">
+
+			<div id="github" class="venue">
+				<img class="brand-logo" src="assets/img/github.png" alt="github logo">
+				<a href="https://github.com/{{ site.github_username }}">
+					{{ site.github_username }}
+				</a>
+			</div>
+
+			<div id="twitter" class="venue">
+				<img class="brand-logo" src="assets/img/twitter.png" alt="twitter logo">
+				<a href="https://twitter.com/{{site.twitter_username }}">
+					@{{ site.twitter_username }}
+				</a>
+			</div>
+
+			<div id="linkedin" class="venue">
+				<img class="brand-logo" src="assets/img/linkedin.png" alt="linkedin logo">
+				<a href="https://linkedin.com/in/mitchnegus">
+					mitchnegus
+				</a>
+			</div>
+
 		</div>
 
-		<div id="email">
-			<span class="email-mask"></span>
-		</div>
-	
 	</div>
 
 </header>
@@ -47,7 +67,7 @@ layout: cv
 			</div>
 			<div class="duration">2018–present</div>
 		</div>
-	
+
 		<div class="degree">
 			<div class="degree-title">M.S.</div>
 			<div class="description">
@@ -61,8 +81,12 @@ layout: cv
 			<div class="degree-title">B.S.</div>
 			<div class="description">
 				<div class="institution">University of Massachusetts Amherst</div>
-				<div class="subject">Physics <i>summa cum laude</i>, with a concentration in renewable energy</div>
-				<div class="other">Commonwealth Honors College Scholar with greatest distinction</div>
+				<div class="subject">
+					Physics <i>summa cum laude</i>, with a <a href="https://icons.cns.umass.edu/">concentration in renewable energy</a>
+				</div>
+				<div class="other">
+					<a href="https://www.umass.edu/honors/">Commonwealth Honors College Scholar</a> with greatest distinction
+				</div>
 			</div>
 			<div class="duration">2012–2016</div>
 		</div>
@@ -120,7 +144,7 @@ layout: cv
 			</div>
 	
 		</div>
-	  
+ 
 		<div class="institution">
 			<h3>University of Massachusetts, Amherst</h3>
 	
@@ -158,14 +182,24 @@ layout: cv
 			<h3>University of California, Berkeley</h3>
 	
 			<div class="experience">
-				<div class="course">Reproducible and Collaborative Statistical Data Science</div>
-				<div class="position">Graduate Student Instructor</div>
+				<div class="description">
+					<div class="course">
+						<span class="code">STAT159/259</span>
+						Reproducible and Collaborative Statistical Data Science
+					</div>
+					<div class="position">Graduate Student Instructor</div>
+				</div>
 				<div class="semester">Fall, 2018</div>
 			</div>
 	
 			<div class="experience">
-				<div class="course">Introduction to Nuclear Reactor Theory</div>
-				<div class="position">Graduate Student Instructor</div>
+				<div class="description">
+					<div class="course">
+						<span class="code">NE150</span>
+						Introduction to Nuclear Reactor Theory
+					</div>
+					<div class="position">Graduate Student Instructor</div>
+				</div>
 				<div class="semester">Spring, 2018</div>
 			</div>
 	
@@ -177,15 +211,23 @@ layout: cv
 		<h2>Publications, Presentations, Posters, and Dissertations</h2>
 		
 		<ul>
-			<li class="citation">M. Negus, R. Slaybaugh, D. Farley. “Garbled circuits for enabling privacy-preserving safeguards.” 61st Annual Meeting of the Institute for Nuclear Materials Management (INMM). Jul. 2020.</li>
-			<li class="citation">A. Solodov, D. Farley, C. Brif, N. Pattengale, Y. Gao, J. Lin, M. Negus, R. Slaybaugh. “Development of Novel Approaches to Anomaly Detection and Surety for Safeguards Data.” 60th Annual Meeting of the Institute for Nuclear Materials Management (INMM), Palm Desert, CA. Jul. 2019.</li>
-			<li class="citation">J. C. Batchelder, S. -A. Chong, J. Morrell, M. Ayllon Unzueta, P. Adams, J. D. Bauer, T. Bailey, T. A. Becker, L. A. Bernstein, M. Fratoni, A. M. Hurst, J. James, A. M. Lewis, E. F. Matthews, M. G. Negus, D. Rutte, K. Song, K. Van Bibber, M. Wallace, C. S. Waltz. “Possible evidence of nonstatistical properties in the 35Cl(n, p)35S cross section.” Phys. Rev. C. 99, 044612. 25 Apr. 2019.</li>
-			<li class="citation">D. R. Farley, M. G. Negus, R. N. Slaybaugh. “Industrial Internet-of-Things & Data Analytics for Nuclear Power & Safeguards.” Sandia Report SAND2018-12807 (Unlimited Release). Nov. 2018.</li>
-			<li class="citation">M. Negus. “Ex-core fluence calculations of an operational PWR using VERAShift.” (Unpublished master’s thesis) University of California, Berkeley. Aug. 2019.</li>
-			<li class="citation">M. Negus, S. Sangiorgio, M. Heffner. “Instrument and Analysis Verification for the fissionTPC.” LLNL Summer Student Symposium. Livermore, CA. 3 Aug. 2016. (poster)</li>
-			<li class="citation">M. Negus. “Diagnostically Simulating Radon Progeny at the nEXO Cathode.” (Unpublished bachelor’s thesis) University of Massachusetts Amherst. May 2016.</li>
-			<li class="citation">M. Negus, A. Pocar. “Diagnostically Simulating Radon Induced Backgrounds for nEXO Efficiency.” Statewide Undergraduate Research Conference. Amherst, MA. 22 Apr. 2016. (poster)</li>
-			<li class="citation">M. Negus, S. Sangiorgio, M. Heffner. “Simulated optimization of HFE volume around the nEXO TPC.” Division of Nuclear Physics Fall Meeting 2015, CEU. Santa Fe, NM. 28-30 Oct. 2015. (poster)</li>
+			<li class="citation"><span class="me">M. Negus</span>, R. Slaybaugh, D. Farley. “Garbled circuits for enabling privacy-preserving safeguards.” 61st Annual Meeting of the Institute for Nuclear Materials Management (INMM). Jul. 2020.</li>
+			<li class="citation">
+				<a href="https://www.osti.gov/servlets/purl/1641028">
+					A. Solodov, D. Farley, C. Brif, N. Pattengale, Y. Gao, J. Lin, <span class="me">M. Negus</span>, R. Slaybaugh. “Development of Novel Approaches to Anomaly Detection and Surety for Safeguards Data.” 60th Annual Meeting of the Institute for Nuclear Materials Management (INMM), Palm Desert, CA. Jul. 2019.
+				</a>
+			</li>
+			<li class="citation">
+				<a href="https://journals.aps.org/prc/abstract/10.1103/PhysRevC.99.044612">
+					J. C. Batchelder, S. -A. Chong, J. Morrell, M. Ayllon Unzueta, P. Adams, J. D. Bauer, T. Bailey, T. A. Becker, L. A. Bernstein, M. Fratoni, A. M. Hurst, J. James, A. M. Lewis, E. F. Matthews, <span class="me">M. G. Negus</span>, D. Rutte, K. Song, K. Van Bibber, M. Wallace, C. S. Waltz. “Possible evidence of nonstatistical properties in the 35Cl(n, p)35S cross section.” Phys. Rev. C. 99, 044612. 25 Apr. 2019.
+				</a>
+			</li>
+			<li class="citation">D. R. Farley, <span class="me">M. G. Negus</span>, R. N. Slaybaugh. “Industrial Internet-of-Things & Data Analytics for Nuclear Power & Safeguards.” Sandia Report SAND2018-12807 (Unlimited Release). Nov. 2018.</li>
+			<li class="citation"><span class="me">M. Negus</span>. “Ex-core fluence calculations of an operational PWR using VERAShift.” (Unpublished master’s thesis) University of California, Berkeley. Aug. 2019.</li>
+			<li class="citation"><span class="me">M. Negus</span>, S. Sangiorgio, M. Heffner. “Instrument and Analysis Verification for the fissionTPC.” LLNL Summer Student Symposium. Livermore, CA. 3 Aug. 2016. (poster)</li>
+			<li class="citation"><span class="me">M. Negus</span>. “Diagnostically Simulating Radon Progeny at the nEXO Cathode.” (Unpublished bachelor’s thesis) University of Massachusetts Amherst. May 2016.</li>
+			<li class="citation"><span class="me">M. Negus</span>, A. Pocar. “Diagnostically Simulating Radon Induced Backgrounds for nEXO Efficiency.” Statewide Undergraduate Research Conference. Amherst, MA. 22 Apr. 2016. (poster)</li>
+			<li class="citation"><span class="me">M. Negus</span>, S. Sangiorgio, M. Heffner. “Simulated optimization of HFE volume around the nEXO TPC.” Division of Nuclear Physics Fall Meeting 2015, CEU. Santa Fe, NM. 28-30 Oct. 2015. (poster)</li>
 		</ul>
 	</div>
 	
