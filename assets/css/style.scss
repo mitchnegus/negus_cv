@@ -1,9 +1,13 @@
 ---
 ---
+/* Copyright (C) 2021 Mitchell Negus (https://www.mitchnegus.com)
+ */
 
-/* --------------------
+/*
+ * --------------------
  * General page characteristics
- * -------------------- */
+ * --------------------
+ */
 
 html {
 	background-color: #eeeeee;
@@ -14,6 +18,11 @@ body {
 	font-family: 'Open Sans',
 	             Arial,
                sans-serif;
+}
+@media print {
+	body {
+		font-size: 9pt;
+	}
 }
 
 h1, h2, h3, h4, h5 {
@@ -29,14 +38,38 @@ a {
 	text-decoration: none;
 }
 
-/* --------------------
+.copyright {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 250px;
+	color: #bbbbbb;
+	font-size: 8pt;
+}
+@media print {
+	/* No need to display copyright on printed pages/PDF */
+	.copyright {
+		display: none;
+	}
+}
+
+
+/*
+ * --------------------
  * CV header characteristics
- * -------------------- */
+ * --------------------
+ */
 
 #cv {
 	width: 75%;
 	max-width: 1000px;
 	margin: 10px auto;
+}
+@media print {
+	#cv {
+		width: 98%;
+		max-width: none;
+	}
 }
 
 #cv header {
@@ -56,6 +89,11 @@ a {
 	width: auto;
 	margin-right: 5px;
 }
+@media print {
+	#cv .brand-logo {
+		height: 12px;
+	}
+}
 
 #cv #employer {
 	color: #444444;
@@ -68,6 +106,11 @@ a {
 	justify-content: space-between;
 	margin-top: 5px;
 	font-size: 11pt;
+}
+@media print {
+	#cv #contact {
+		font-size: 8pt;
+	}
 }
 
 #cv #contact #web {
@@ -97,9 +140,11 @@ a {
 }
 
 
-/* --------------------
+/*
+ * --------------------
  * CV content characteristics
- * -------------------- */
+ * --------------------
+ */
 
 #cv-content {
 	padding: 0 5px;
@@ -107,6 +152,13 @@ a {
 
 #cv .section {
 	margin: 50px 0;
+}
+
+@media print {
+	/* Avoid splitting defined 'page-units' across pages */
+	#cv .page-unit {
+		break-inside: avoid;
+	}
 }
 
 #cv .degree,
@@ -134,6 +186,11 @@ a {
 	margin-left: 25px;
 	font-size: 11pt;
 	font-style: italic;
+}
+@media print {
+	#cv .notes {
+		font-size: 8pt;
+	}
 }
 
 #cv .duration ,
@@ -170,6 +227,11 @@ a {
 	color: #777777;
 	font-size: 11pt;
 }
+@media print {
+	#cv #teaching .course .code {
+		font-size: 8pt;
+	}
+}
 
 #cv #teaching .course {
 	font-weight: 600;
@@ -186,5 +248,10 @@ a {
 
 #cv #skill-categories .skill-category .note {
 	color: #777777;
-	font-size: 12px;
+	font-size: 9pt;
+}
+@media print {
+	#cv #skill-categories .skill-category .note {
+		font-size: 6pt;
+	}
 }
