@@ -18,18 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "CV: Mitchell Negus"
+title: "CV | Mitchell Negus"
 email: negus@berkeley.edu
 description: "My (interactive) CV, designed as printable HTML/CSS."
 baseurl: "/negus_cv" # the subpath of your site, e.g. /blog
 # url: "https://mitchnegus.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mitchnegus
 github_username:  mitchnegus
-
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
