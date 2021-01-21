@@ -78,10 +78,42 @@ a {
 	border-bottom: 2px solid #777777;
 }
 
-#cv h1 {
-	margin-bottom: 10px;
-	text-align: center;
+#cv header .me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0 10px;
 	letter-spacing: 1px;
+}
+@media print {
+	#cv header .me {
+		margin-top: 0;
+	}
+}
+
+#cv header .me .name {
+	margin: 0;
+	text-align: center;
+}
+
+#cv header .me .pronouns {
+	margin: -5px 0;
+	color: #888888;
+	font-size: 8pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: opacity 0.2s ease
+}
+@media print {
+	#cv header .me .pronouns {
+		display: none;
+	}
+}
+
+
+#cv header .me:hover .pronouns {
+	opacity: 1;
 }
 
 #cv .brand-logo {
