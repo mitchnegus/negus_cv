@@ -44,21 +44,6 @@ a {
 	}
 }
 
-.copyright {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-top: 250px;
-	color: #bbbbbb;
-	font-size: 8pt;
-}
-@media print {
-	/* No need to display copyright on printed pages/PDF */
-	.copyright {
-		display: none;
-	}
-}
-
 #cv {
 	width: 75%;
 	max-width: 1000px;
@@ -349,10 +334,38 @@ a {
 	}
 }
 
+
+/*
+ * --------------------
+ * CV footer characteristics
+ * --------------------
+ */
+
+#cv #view-online {
+	display: none;
+	width: 100%;
+	margin-top: 100px;
+	font-size: 8pt;
+	text-align: center;
+}
 @media print {
-	#cv #service .description .note,
-	#cv #professional-development .description .note,
-	#cv #honors .description .note,
-	#cv #extracurriculars .description .note {
+	#cv #view-online {
+		display: block;
 	}
 }
+
+.copyright {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 250px;
+	color: #bbbbbb;
+	font-size: 8pt;
+}
+@media print {
+	/* No need to display copyright on printed pages/PDF */
+	.copyright {
+		display: none;
+	}
+}
+
