@@ -38,6 +38,12 @@ a {
 	text-decoration: none;
 }
 
+@media print {
+	ul {
+		padding-left: 15px;
+	}
+}
+
 .copyright {
 	width: 100%;
 	display: flex;
@@ -53,6 +59,21 @@ a {
 	}
 }
 
+#cv {
+	width: 75%;
+	max-width: 1000px;
+	margin: 10px auto;
+	padding: 0 5px;
+}
+@media print {
+	#cv {
+		width: 98%;
+		max-width: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
 
 /*
  * --------------------
@@ -60,22 +81,16 @@ a {
  * --------------------
  */
 
-#cv {
-	width: 75%;
-	max-width: 1000px;
-	margin: 10px auto;
-}
-@media print {
-	#cv {
-		width: 98%;
-		max-width: none;
-	}
-}
-
 #cv header {
 	margin-bottom: 30px;
-	padding: 0 5px 10px;
+	padding: 0 0 10px;
 	border-bottom: 2px solid #777777;
+}
+@media print {
+	#cv header {
+		margin-top: -10px;
+		margin-bottom: 15px;
+	}
 }
 
 #cv header .me {
@@ -87,7 +102,7 @@ a {
 }
 @media print {
 	#cv header .me {
-		margin-top: 0;
+		margin: 0 0  5px;
 	}
 }
 
@@ -141,6 +156,7 @@ a {
 }
 @media print {
 	#cv #contact {
+		margin-top: -25px;
 		font-size: 8pt;
 	}
 }
@@ -178,12 +194,13 @@ a {
  * --------------------
  */
 
-#cv-content {
-	padding: 0 5px;
-}
-
 #cv .section {
 	margin: 50px 0;
+}
+@media print {
+	#cv .section {
+		margin: 20px 0 10px;
+	}
 }
 
 @media print {
@@ -221,16 +238,25 @@ a {
 }
 @media print {
 	#cv .notes {
+		margin-top: 0;
+		margin-left: 15px;
 		font-size: 8pt;
 	}
 }
 
-#cv .duration ,
-#cv .semester ,
+#cv .duration,
+#cv .semester,
 #cv .date {
 	min-width: 175px;
 	margin-left: auto;
 	text-align: right;
+}
+@media print {
+	#cv .duration,
+	#cv .semester,
+	#cv .date {
+		min-width: 125px;
+	}
 }
 
 #cv #education .degree-title {
@@ -243,6 +269,18 @@ a {
 
 #cv #research .position {
 	font-weight: 600;
+}
+
+@media print {
+	#cv #research .experience {
+		margin: 5px 0;
+	}
+}
+
+@media print {
+	#cv #research .experience ul.accomplishments {
+		margin: 5px 0;
+	}
 }
 
 #cv #teaching .experience {
@@ -278,12 +316,42 @@ a {
 	justify-content: space-between;
 }
 
-#cv #skill-categories .skill-category .note {
+#cv .skill-category {
+	margin: 0;
+}
+
+#cv .skill-category h4 {
+	margin: 0 0 15px;
+}
+
+#cv .skill-category li {
+	margin-left: 15px;
+}
+
+#cv .skill-category .note {
 	color: #777777;
 	font-size: 9pt;
 }
 @media print {
-	#cv #skill-categories .skill-category .note {
+	#cv .skill-category .note {
 		font-size: 6pt;
+	}
+}
+
+@media print {
+	#cv #service .description,
+	#cv #professional-development .description,
+	#cv #honors .description,
+	#cv #extracurriculars .description {
+		display: flex;
+		align-items: flex-end;
+	}
+}
+
+@media print {
+	#cv #service .description .note,
+	#cv #professional-development .description .note,
+	#cv #honors .description .note,
+	#cv #extracurriculars .description .note {
 	}
 }
