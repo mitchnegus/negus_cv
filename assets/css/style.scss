@@ -25,6 +25,11 @@ body {
 	}
 }
 
+body.serif {
+	font-family: 'Cardo',
+							 serif;
+}
+
 h1, h2, h3, h4, h5 {
 	font-family: Montserrat,
 	             'Open Sans',
@@ -34,6 +39,15 @@ h1, h2, h3, h4, h5 {
 
 h1, h2, h4 {
 	text-transform: uppercase;
+}
+
+.serif h1,
+.serif h2,
+.serif h3,
+.serif h4,
+.serif h5 {
+	font-family: 'Cardo',
+							 serif;
 }
 
 a {
@@ -344,6 +358,12 @@ a {
  * --------------------
  */
 
+#cv footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 #cv #view-online {
 	display: none;
 	width: 100%;
@@ -357,17 +377,24 @@ a {
 	}
 }
 
-.copyright {
-	width: 100%;
-	display: flex;
-	justify-content: center;
+#cv footer .settings {
+	align-self: flex-end;
+	opacity: 0;
+}
+
+#cv footer .settings:hover {
+	color: #aaaaaa;
+	opacity: 0.3;
+}
+
+#cv footer .copyright {
 	margin-top: 250px;
 	color: #bbbbbb;
 	font-size: 8pt;
 }
 @media print {
 	/* No need to display copyright on printed pages/PDF */
-	.copyright {
+	#cv footer  .copyright {
 		display: none;
 	}
 }
