@@ -10,35 +10,35 @@
  */
 
 html {
-	background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 body {
-	font-size: 12pt;
-	font-family: 'Open Sans',
-	             Arial,
+  font-size: 12pt;
+  font-family: 'Open Sans',
+               Arial,
                sans-serif;
 }
 @media print {
-	body {
-		font-size: 9pt;
-	}
+  body {
+    font-size: 9pt;
+  }
 }
 
 body.serif {
-	font-family: 'Cardo',
-							 serif;
+  font-family: 'Cardo',
+               serif;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: Montserrat,
-	             'Open Sans',
-							 Arial,
-							 sans-serif;
+  font-family: Montserrat,
+               'Open Sans',
+               Arial,
+               sans-serif;
 }
 
 h1, h2, h4 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .serif h1,
@@ -46,34 +46,34 @@ h1, h2, h4 {
 .serif h3,
 .serif h4,
 .serif h5 {
-	font-family: 'Cardo',
-							 serif;
+  font-family: 'Cardo',
+               serif;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media print {
-	ul {
-		padding-left: 15px;
-	}
+  ul {
+    padding-left: 15px;
+  }
 }
 
 #cv {
-	width: 75%;
-	max-width: 1000px;
-	margin: 10px auto;
-	padding: 0 5px;
+  width: 75%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 0 5px;
 }
 @media print {
-	#cv {
-		width: 98%;
-		max-width: none;
-		margin: 0;
-		padding: 0;
-	}
+  #cv {
+    width: 98%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 
@@ -84,109 +84,109 @@ a {
  */
 
 #cv header {
-	margin-bottom: 30px;
-	padding: 0 0 10px;
-	border-bottom: 2px solid #777777;
+  margin-bottom: 30px;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #777777;
 }
 @media print {
-	#cv header {
-		margin-top: -10px;
-		margin-bottom: 15px;
-	}
+  #cv header {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
 }
 
 #cv header .me {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 20px 0 10px;
-	letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 10px;
+  letter-spacing: 1px;
 }
 @media print {
-	#cv header .me {
-		margin: 0 0  5px;
-	}
+  #cv header .me {
+    margin: 0 0  5px;
+  }
 }
 
 #cv header .me .name {
-	margin: 0;
-	text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 #cv header .me .pronouns {
-	margin: -5px 0;
-	color: #888888;
-	font-size: 8pt;
-	font-weight: bold;
-	text-transform: uppercase;
-	opacity: 0;
-	transition: opacity 0.2s ease
+  margin: -5px 0;
+  color: #888888;
+  font-size: 8pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.2s ease
 }
 @media print {
-	#cv header .me .pronouns {
-		display: none;
-	}
+  #cv header .me .pronouns {
+    display: none;
+  }
 }
 
 
 #cv header .me:hover .pronouns {
-	opacity: 1;
+  opacity: 1;
 }
 
 #cv .brand-logo {
-	height: 16px;
-	width: auto;
-	margin-right: 5px;
+  height: 16px;
+  width: auto;
+  margin-right: 5px;
 }
 @media print {
-	#cv .brand-logo {
-		height: 12px;
-	}
+  #cv .brand-logo {
+    height: 12px;
+  }
 }
 
 #cv #employer {
-	color: #444444;
-	font-weight: 600;
-	text-align: center;
+  color: #444444;
+  font-weight: 600;
+  text-align: center;
 }
 
 #cv #contact {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 5px;
-	font-size: 11pt;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 11pt;
 }
 @media print {
-	#cv #contact {
-		margin-top: -25px;
-		font-size: 8pt;
-	}
+  #cv #contact {
+    margin-top: -25px;
+    font-size: 8pt;
+  }
 }
 
 #cv #contact #web {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #cv #contact #email-mask::before {
-	content: "negus";
+  content: "negus";
 }
 
 #cv #contact #email-mask::after {
-	content: "@berkeley.edu";
+  content: "@berkeley.edu";
 }
 
 #cv #media {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #cv #media .handle {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -197,19 +197,19 @@ a {
  */
 
 #cv .section {
-	margin: 50px 0;
+  margin: 50px 0;
 }
 @media print {
-	#cv .section {
-		margin: 20px 0 10px;
-	}
+  #cv .section {
+    margin: 20px 0 10px;
+  }
 }
 
 @media print {
-	/* Avoid splitting defined 'page-units' across pages */
-	#cv .page-unit {
-		break-inside: avoid;
-	}
+  /* Avoid splitting defined 'page-units' across pages */
+  #cv .page-unit {
+    break-inside: avoid;
+  }
 }
 
 #cv .degree,
@@ -217,138 +217,141 @@ a {
 #cv .opportunity,
 #cv .honor,
 #cv .activity {
-	display: flex;
+  display: flex;
 }
 
 #cv .degree,
 #cv .experience {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 #cv .opportunity,
 #cv .honor,
 #cv .activity {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 #cv .notes {
-	color: #777777;
-	margin-top: 5px;
-	margin-left: 25px;
-	font-size: 11pt;
-	font-style: italic;
+  color: #777777;
+  margin-top: 5px;
+  margin-left: 25px;
+  font-size: 11pt;
+  font-style: italic;
 }
 @media print {
-	#cv .notes {
-		margin-top: 0;
-		margin-left: 15px;
-		font-size: 8pt;
-	}
+  #cv .notes {
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 8pt;
+  }
 }
 
 #cv .duration,
 #cv .semester,
 #cv .date {
-	min-width: 175px;
-	margin-left: auto;
-	text-align: right;
+  min-width: 175px;
+  margin-left: auto;
+  text-align: right;
 }
 @media print {
-	#cv .duration,
-	#cv .semester,
-	#cv .date {
-		min-width: 115px;
-		font-size: 8pt;
-	}
+  #cv .duration,
+  #cv .semester,
+  #cv .date {
+    min-width: 115px;
+    font-size: 8pt;
+  }
 }
 
 #cv #education .degree-title {
-	min-width: 75px;
+  min-width: 75px;
 }
 
 #cv #education .institution {
-	font-weight: 600;
+  font-weight: 600;
 }
 
+@media print {
+  #cv #employment .experience,
+  #cv #research .experience {
+    margin: 5px 0;
+  }
+}
+
+#cv #employment .position,
 #cv #research .position {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 @media print {
-	#cv #research .experience {
-		margin: 5px 0;
-	}
-}
-
-@media print {
-	#cv #research .experience ul.accomplishments {
-		margin: 5px 0;
-	}
+  #cv #employment .experience ul.accomplishments,
+  #cv #research .experience ul.accomplishments {
+    margin: 5px 0;
+  }
 }
 
 #cv #teaching .experience {
-	display: flex;
+  display: flex;
 }
 
 #cv #teaching .description {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #cv #teaching .course .code {
-	margin-right: 5px;
-	color: #777777;
-	font-size: 11pt;
+  margin-right: 5px;
+  color: #777777;
+  font-size: 11pt;
 }
 @media print {
-	#cv #teaching .course .code {
-		font-size: 8pt;
-	}
+  #cv #teaching .course .code {
+    font-size: 8pt;
+  }
 }
 
 #cv #teaching .course {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 #cv #communications .me {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 #cv #skill-categories {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #cv .skill-category {
-	margin: 0;
+  margin: 0;
 }
 
 #cv .skill-category h4 {
-	margin: 0 0 5px;
+  margin: 0 0 5px;
 }
 
 #cv .skill-category li {
-	margin-left: 15px;
+  margin-left: 15px;
 }
 
 #cv .skill-category .note {
-	color: #777777;
-	font-size: 9pt;
+  color: #777777;
+  font-size: 9pt;
 }
 @media print {
-	#cv .skill-category .note {
-		font-size: 6pt;
-	}
+  #cv .skill-category .note {
+    font-size: 6pt;
+  }
 }
 
 @media print {
-	#cv #service .description,
-	#cv #professional-development .description,
-	#cv #honors .description,
-	#cv #extracurriculars .description {
-		display: flex;
-		align-items: flex-end;
-	}
+  #cv #service .description,
+  #cv #professional-development .description,
+  #cv #honors .description,
+  #cv #extracurriculars .description {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 
@@ -359,99 +362,99 @@ a {
  */
 
 #cv footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cv #view-online {
-	display: none;
-	width: 100%;
-	margin-top: 40px;
-	font-size: 6pt;
-	text-align: center;
+  display: none;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 6pt;
+  text-align: center;
 }
 @media print {
-	#cv #view-online {
-		display: block;
-	}
+  #cv #view-online {
+    display: block;
+  }
 }
 
 #cv footer #baseline {
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #cv footer .settings {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 5px 0;
-	color: #bbbbbb;
-	opacity: 0;
-	transition: opacity 0.5s ease 0.5s
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0;
+  color: #bbbbbb;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.5s
 }
 
 #cv footer .settings:hover {
-	opacity: 1; /*0.3;*/
+  opacity: 1; /*0.3;*/
 }
 
 #cv footer #settings-icon {
-	width: 20px;
-	height: 20px;
-	margin: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }
 
 #cv footer .settings #display-options-container {
-	display: none;
-	margin-bottom: 20px;
+  display: none;
+  margin-bottom: 20px;
 }
 
 #cv footer .settings ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #cv footer .settings ul {
-	list-style-type: ''
+  list-style-type: ''
 }
 
 #cv footer .settings .options {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #cv footer .settings .option-category {
-	margin: 3px 0;
+  margin: 3px 0;
 }
 
 #cv footer .settings .option {
-	width: 100%;
+  width: 100%;
 }
 
 #cv footer .settings input {
-	margin-left: auto;
+  margin-left: auto;
 }
 
 #cv footer .settings .option-subcategory {
-	padding-left: 15px;
+  padding-left: 15px;
 }
 
 #cv footer .settings .option-subcategory .option {
-	list-style-type: '– ';
+  list-style-type: '– ';
 }
 
 #cv footer .copyright {
-	color: #bbbbbb;
-	font-size: 8pt;
+  color: #bbbbbb;
+  font-size: 8pt;
 }
 @media print {
-	/* No need to display copyright on printed pages/PDF */
-	#cv footer  .copyright {
-		display: none;
-	}
+  /* No need to display copyright on printed pages/PDF */
+  #cv footer  .copyright {
+    display: none;
+  }
 }
 
