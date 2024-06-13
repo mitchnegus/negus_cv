@@ -1,7 +1,8 @@
-# Ruby files for local website preview
+# Ruby files for local website preview / gemfile management
 .ruby-version
 Gemfile
 Gemfile.lock
+.bundle
 
 # Jekyll files
 _site
